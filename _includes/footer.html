@@ -1,0 +1,41 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.longtitle | escape }}</h2>
+
+    <div style="display: flex;justify-content: space-between;">
+      <div>
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+            <li>
+<!-- mailto:alejandrodecora@gmail.com?subject=Bom currículum&amp;body=¡Contratado! Comezas a primeiros do vindeiro mes. -->
+              <a class="u-email" href="mailto:{{ site.email }}?subject=Welcome to Tinybird&body=Welcome to the not so formal %22Billing Team%22.">{{ site.email }}</a>
+            </li>
+          {%- endif -%}
+          <br />
+          {%- if jekyll.environment != 'dev' and site.gahandler -%}
+            {%- include google-analytics.html -%}
+          {%- endif -%}
+          {%- if jekyll.environment != 'dev' and site.cnzzhandler -%}
+            {%- include cnzz.html -%}
+          {%- endif -%}
+        </ul>
+      </div>
+
+      <div>
+        {%- include social.html -%}
+      </div>
+    </div>
+
+  </div>
+
+</footer>

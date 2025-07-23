@@ -1,0 +1,85 @@
+# Configurations
+title:            My Tinybird Application Adventure
+longtitle:        My Tinybird Application Adventure
+author:           Alejandro de Cora
+email:            alejandrodecora@gmail.com
+description: >
+  Appliying to a Tinybird positions, follow me on the process.
+
+version:          1.0
+
+# url:            'https://adecora.github.io/tinybird-adventure/'
+url:              'http://localhost:4000'
+baseurl:          ''
+# rss:              RSS
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+# pandoc:
+#   format: html5
+#   highlight-style: tango
+#   extensions:
+#     - smart
+#     - mathjax
+
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink:        none
+
+excerpt_separator: "<!--more-->"
+
+# Navigation
+navigation:
+- text: Blog
+  url: /blog/
+# - text: Archive
+#   url: /archive/
+- text: Github
+  url: https://github.com/adecora/tinybird-adventure
+  external: true
+
+exclude:
+  - _drafts
+
+#Social Media links
+social:
+  github:         adecora
+  # facebook:       -
+  linkedin:       alejandro-varela-de-cora-902860359
+  # pinterest:      -
+  # twitter:        -
+  bluesky:        vichel0creg0.bsky.social
+  # stackoverflow:  -
+
+# Google Analytics
+# gahandler:        'UA-xxxxxxxxx-x'
+
+# CNZZ
+# cnzzhandler:      'xxxxxxxxxx'
+
+# Disqus
+# disqushandler:    '-'
+
+# Blog Configurations
+paginate:         10 # Posts per page on the blog index
+paginate_path:    '/blog/page:num'
+destination:      ./_site
+incremental:      true
+regenerate:       false
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji
