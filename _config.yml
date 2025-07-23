@@ -1,4 +1,5 @@
-# Configurations
+# Configururl:              'https://adecora.github.io'
+# For local development, use: http://localhost:4000ons
 title:            My Tinybird Application Adventure
 longtitle:        My Tinybird Application Adventure
 author:           Alejandro de Cora
@@ -8,9 +9,9 @@ description: >
 
 version:          1.0
 
-# url:            'https://adecora.github.io/tinybird-adventure/'
-url:              'http://localhost:4000'
-baseurl:          ''
+url:            'https://adecora.github.io/tinybird-adventure/'
+# url:              'http://localhost:4000'
+baseurl:          '/tinybird-adventure'
 # rss:              RSS
 
 # markdown render engine.
