@@ -52,6 +52,12 @@ navigation:
 
 exclude:
   - _drafts
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - LICENSE
 
 #Social Media links
 social:
