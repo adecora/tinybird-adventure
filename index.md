@@ -17,14 +17,13 @@ The face of this repo is cortesy of [jekyll][2], the design is borrowed from [si
 I'll be updating this list with posts detailing the steps I'm taking to prepare.
 
 <ul>
-  {% for post in site.posts limit:6 %}
+  {% for post in site.posts limit:10 %}
     <li class="alink">
       <a href="{{ post.url | relative_url }}" class="red-link">
         {{ post.date | date: "%Y-%m-%d" }}&emsp;{{ post.title }}
       </a>
     </li>
   {%- endfor -%}
-  <li class="alink"><a href="./blog/" class="red-link">&hellip;&hellip;</a></li>
 </ul>
 
 [1]: https://github.com/adecora/tinybird-adventure
